@@ -15,4 +15,13 @@ class HomeController extends Controller
         $view->setTemplate(MVCSAMPLE_VIEWS . '/home.phtml');
         return $view;
     }
+
+    public function sample ()
+    {
+        $view = new ViewModel([
+            'colours' => ['magenta', 'cyan', 'yellow'],
+        ]);
+        $view->setTemplate(MVCSAMPLE_VIEWS . '/home.phtml');
+        return $view;
+    }
 }
